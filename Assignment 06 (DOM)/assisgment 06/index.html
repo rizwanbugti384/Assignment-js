@@ -1,0 +1,92 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Practice</title>
+</head>
+<body>
+    <!-- Add these elements to test the functions -->
+    <p id="message">Original Message</p>
+    <input type="text" id="nameInput" placeholder="Enter name">
+    <div id="result"></div>
+    <button onclick="displayName()">Show Name</button>
+    
+    <section id="container" style="padding: 20px; border: 1px solid black;">
+        Container Section
+        <button onclick="changeBackground()">Change Background</button>
+    </section>
+    
+    <h1 id="mainTitle">Main Title</h1>
+    
+    <input type="number" id="num1" placeholder="Enter number">
+    <p id="output"></p>
+    <button onclick="showNumber()">Show Number</button>
+    
+    <button class="submit-btn">Submit Button</button>
+    
+    <input type="number" id="first" placeholder="First number">
+    <input type="number" id="second" placeholder="Second number">
+    <span id="sum">0</span>
+    <button onclick="calculateSum()">Calculate Sum</button>
+    
+    <p class="description">Original description</p>
+    
+    <div id="box" style="height: 100px; border: 1px solid black;">Box</div>
+    
+    <input type="email" id="email" placeholder="Enter email">
+    <button onclick="printEmail()">Print Email</button>
+    
+    <input type="text" id="fullName" placeholder="Your name">
+    <div id="greeting"></div>
+    <button onclick="showGreeting()">Show Greeting</button>
+    
+    <img id="profilePic" src="old-image.jpg" alt="Profile" width="100">
+    
+    <p class="highlight">Highlighted text 1</p>
+    <p class="highlight">Highlighted text 2</p>
+    
+    <input type="checkbox" id="agree"> I agree
+    <p id="agreementStatus"></p>
+    <button onclick="checkAgreement()">Check Agreement</button>
+    
+    <select id="options">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+    <span id="selectedValue"></span>
+    <button onclick="showSelectedOption()">Show Selected</button>
+    
+    <p id="dateTime"></p>
+    <button onclick="showDateTime()">Show Date/Time</button>
+    
+    <p id="togglePara">This paragraph can be hidden</p>
+    <button onclick="hideParagraph()">Hide Paragraph</button>
+    
+    <input type="number" id="age" placeholder="Enter age">
+    <span id="eligibilityResult"></span>
+    <button onclick="checkEligibility()">Check Eligibility</button>
+    
+    <input type="text" id="searchBox" placeholder="Search...">
+    <button onclick="clearSearch()">Clear Search</button>
+
+    <script>
+        // Include all the JavaScript functions here
+        // Add event listeners for buttons that don't have inline onclick
+        document.querySelector(".submit-btn").addEventListener("click", function() {
+            console.log("Button Clicked");
+        });
+        
+        function changeBackground() {
+            document.querySelector("#container").style.backgroundColor = "lightblue";
+        }
+        
+        function hideParagraph()
+     {
+            document.querySelector("#togglePara").style.display = "none";
+        }
+        
+        // Add all other functions here...
+    </script>
+</body>
+</html>
