@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Images</title>
+</head>
+<body>
+
+  <img src="mobile1.jpg" alt="Mobile 1" width="100" onclick="showImageAlert('Mobile 1')">
+  <img src="mobile2.jpg" alt="Mobile 2" width="100" onclick="showImageAlert('Mobile 2')">
+  <img src="mobile3.jpg" alt="Mobile 3" width="100" onclick="showImageAlert('Mobile 3')">
+
+  <script>
+    function showImageAlert(imageName) {
+      alert('You clicked on ' + imageName);
+    }
+  </script>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Table</title>
+</head>
+<body>
+
+  <table id="studentTable" border="1">
+    <tr>
+      <th>Student Name</th>
+      <th>Age</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>18</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>Mark</td>
+      <td>17</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <!-- Add 8 more student records as needed -->
+  </table>
+
+  <script>
+    function deleteRow(button) {
+      var row = button.parentNode.parentNode;  // Get the row of the clicked button
+      row.parentNode.removeChild(row);  // Delete the row from the table
+    }
+  </script>
+
+</body>
+</html>
+
