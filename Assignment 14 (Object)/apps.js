@@ -74,6 +74,7 @@ function sortProducts() {
     list.innerHTML += `<li>${p.name} - $${p.price}</li>`;
   });
 }
+ 
 
 
 
